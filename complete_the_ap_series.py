@@ -23,12 +23,23 @@ def print_series(a1,a2,n):
         i = i+1
     return result
 
+# a1 = int(input("Enter a1 "))
+# a2 = int(input("Enter a2 "))
+# n = int(input("Enter n "))
+
+# output = print_series(a1,a2,n)
+# print(output[n-1])
+
+
+def find_the_nth_number(a1, a2, n):
+    d = a2-a1
+    an = a1 + (n-1) * d
+
+    return an
+
 a1 = int(input("Enter a1 "))
 a2 = int(input("Enter a2 "))
 n = int(input("Enter n "))
 
 output = print_series(a1,a2,n)
 print(output[n-1])
-
-
-        
